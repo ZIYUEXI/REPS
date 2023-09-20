@@ -1,0 +1,10 @@
+#include "SysT.h"
+
+void InitSysT(void){
+		SysTick_CLKSourceConfig(SysTick_CLKSource_HCLK);
+	SysTick_Config(SystemCoreClock / 10000000);
+	SysTick->LOAD = 1;
+	SysTick->CTRL |= SysTick_CTRL_TICKINT_Msk | SysTick_CTRL_ENABLE_Msk;
+	
+	
+}

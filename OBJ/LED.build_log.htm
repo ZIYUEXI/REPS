@@ -1,0 +1,194 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.18a
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information:  ,  , LIC=HN045-GMDG1-625LB-29PAL-JSC4T-2WY3I
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.18a
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 1 (build 61)
+Assembler:       Armasm.exe V5.06 update 1 (build 61)
+Linker/Locator:  ArmLink.exe V5.06 update 1 (build 61)
+Library Manager: ArmAr.exe V5.06 update 1 (build 61)
+Hex Converter:   FromElf.exe V5.06 update 1 (build 61)
+CPU DLL:         SARMCM3.DLL V5.18a
+Dialog DLL:      DARMSTM.DLL V1.65.0.0
+Target DLL:      Segger\JL2CM3.dll V2.99.19.0
+Dialog DLL:        TARMSTM.DLL   
+ 
+<h2>Project:</h2>
+D:\xiangmu\老子的项目\My_GoodV2\USER\LED.uvprojx
+Project File Date:  03/23/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 1 (build 61)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'LED'
+compiling led.c...
+compiling Lcd_Driver.c...
+Lcd_Driver.c(344): warning:  #1-D: last line of file ends without a newline
+  }
+Lcd_Driver.c: 1 warning, 0 errors
+compiling Setting.c...
+Setting.c(40): warning:  #223-D: function "getColor" declared implicitly
+  	getColor();
+Setting.c(95): warning:  #1-D: last line of file ends without a newline
+  	}
+Setting.c(75): warning:  #177-D: variable "flag" was declared but never referenced
+  	u8 flag;
+Setting.c: 3 warnings, 0 errors
+compiling My_usart.c...
+My_usart.c(12): warning:  #1-D: last line of file ends without a newline
+  }
+My_usart.c(5): warning:  #177-D: variable "GPIO_InitStructure" was declared but never referenced
+  	GPIO_InitTypeDef  GPIO_InitStructure;// GPIO
+My_usart.c(6): warning:  #177-D: variable "USART_InitStructure" was declared but never referenced
+  	USART_InitTypeDef USART_InitStructure;// 串??
+My_usart.c(7): warning:  #177-D: variable "NVIC_InitStructure" was declared but never referenced
+  	NVIC_InitTypeDef NVIC_InitStructure;// ?卸?
+My_usart.c: 4 warnings, 0 errors
+compiling stm32f10x_it.c...
+compiling Friendly_Forces.c...
+Friendly_Forces.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+usart3.h(13): warning:  #1-D: last line of file ends without a newline
+  #endif
+Usart55.h(14): warning:  #1-D: last line of file ends without a newline
+  #endif
+Friendly_Forces.c(46): warning:  #167-D: argument of type "volatile char *" is incompatible with parameter of type "void *"
+  				memset(received_string, 0, 
+AX_STRLEN);
+Friendly_Forces.c(70): warning:  #223-D: function "Creat_Menu_String" declared implicitly
+              Creat_Menu_String(y,arrays_setting[i],'1');
+Friendly_Forces.c(73): warning:  #223-D: function "Creat_Menu_String" declared implicitly
+              Creat_Menu_String(y,arrays_setting[i],'0');
+Friendly_Forces.c(98): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+      Gui_DrawFont_GBK16(3,70,
+LUE,
+LACK,tims);
+Friendly_Forces.c(118): warning:  #223-D: function "Creat_Menu_String" declared implicitly
+              Creat_Menu_String(y,arrays_setting[i],'1');
+Friendly_Forces.c(121): warning:  #223-D: function "Creat_Menu_String" declared implicitly
+              Creat_Menu_String(y,arrays_setting[i],'0');
+Friendly_Forces.c(175): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+          if(strcmp(usart2_buffer,friend_code) == 0) {
+Friendly_Forces.c(181): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+          if(strcmp(usart2_buffer,check_code) == 0) {
+Friendly_Forces.c(188): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  				if(strcmp(usart2_buffer,"TTACW") == 0) {
+Friendly_Forces.c(169): warning:  #177-D: variable "p_start" was declared but never referenced
+      char* p_start;
+Friendly_Forces.c(170): warning:  #177-D: variable "p_end" was declared but never referenced
+      char* p_end;
+Friendly_Forces.c(171): warning:  #177-D: variable "len" was declared but never referenced
+      size_t len;
+Friendly_Forces.c(271): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+                          USART_SenStr(
+SART2,friend_code_with_enter);
+Friendly_Forces.c(282): warning:  #223-D: function "delay_ms" declared implicitly
+                      delay_ms(1);
+Friendly_Forces.c(294): warning:  #223-D: function "delay_ms" declared implicitly
+                      delay_ms(100);
+Friendly_Forces.c(310): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+                      USART_SenStr(
+SART2,check_code_with_enter);
+Friendly_Forces.c(355): warning:  #223-D: function "delay_ms" declared implicitly
+                  delay_ms(1);
+Friendly_Forces.c(411): warning:  #223-D: function "delay_ms" declared implicitly
+                  delay_ms(1);
+Friendly_Forces.c(417): warning:  #1-D: last line of file ends without a newline
+  }
+Friendly_Forces.c: 22 warnings, 0 errors
+compiling Usart55.c...
+Usart55.h(14): warning:  #1-D: last line of file ends without a newline
+  #endif
+Usart55.c(56): warning:  #223-D: function "strlen" declared implicitly
+      int len = strlen(str);
+Usart55.c(84): warning:  #223-D: function "memset" declared implicitly
+              memset(received_string, 0, MAX_STRLEN);
+Usart55.c(95): warning:  #223-D: function "strlen" declared implicitly
+  							if(strlen(received_string) == 7){
+Usart55.c(103): warning:  #223-D: function "memset" declared implicitly
+  								memset(received_string, 0, MAX_STRLEN);
+Usart55.c(115): warning:  #1-D: last line of file ends without a newline
+  }
+Usart55.c: 6 warnings, 0 errors
+compiling usart3.c...
+usart3.h(13): warning:  #1-D: last line of file ends without a newline
+  #endif
+usart3.c(94): warning:  #223-D: function "strlen" declared implicitly
+  	int len = strlen(str);
+usart3.c(147): warning:  #1-D: last line of file ends without a newline
+  }
+usart3.c: 3 warnings, 0 errors
+compiling Main_Menu.c...
+Friendly_Forces.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+Main_Menu.c(125): warning:  #111-D: statement is unreachable
+  	
+CD_LED_CLR;
+Main_Menu.c: 2 warnings, 0 errors
+compiling main.c...
+usart3.h(13): warning:  #1-D: last line of file ends without a newline
+  #endif
+SysT.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+main.c(21): warning:  #177-D: variable "can" was declared but never referenced
+  	 u8 can = 0;
+main.c: 3 warnings, 0 errors
+compiling SysT.c...
+SysT.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+SysT.c: 1 warning, 0 errors
+compiling system_stm32f10x.c...
+compiling Search_Module.c...
+Search_Module.c(122): warning:  #1-D: last line of file ends without a newline
+  }
+Search_Module.c(15): warning:  #177-D: variable "remotion" was declared but never referenced
+  static u16 remotion = 0;
+Search_Module.c: 2 warnings, 0 errors
+compiling Calculagraph.c...
+Usart55.h(14): warning:  #1-D: last line of file ends without a newline
+  #endif
+Calculagraph.c(22): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  		Gui_DrawFont_GBK16(10,50,Text_color,Back_color,str);
+Calculagraph.c(52): warning:  #167-D: argument of type "volatile char *" is incompatible with parameter of type "u8 *"
+  				Gui_DrawFont_GBK16(10,50,Text_color,Back_color,received_string);
+Calculagraph.c(53): warning:  #223-D: function "memset" declared implicitly
+  				memset(received_string, 0, MAX_STRLEN);
+Calculagraph.c(31): warning:  #177-D: variable "flag" was declared but never referenced
+  	short flag = 0;
+Calculagraph.c(32): warning:  #177-D: variable "tt" was declared but never referenced
+  	u8 tt = 0;
+Calculagraph.c: 6 warnings, 0 errors
+compiling GUI.c...
+compiling key.c...
+assembling startup_stm32f10x_hd.s...
+compiling delay.c...
+compiling timer.c...
+compiling usart.c...
+compiling core_cm3.c...
+compiling sys.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_exti.c...
+compiling misc.c...
+compiling stm32f10x_tim.c...
+linking...
+Program Size: Code=24012 RO-data=5752 RW-data=196 ZI-data=2268  
+FromELF: creating hex file...
+"..\OBJ\LED.axf" - 0 Error(s), 53 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  D:\xiangmu\老子的项目\My_GoodV2\USER\RTE
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>
